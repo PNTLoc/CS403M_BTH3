@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Giới thiệu về VinFast</title>
+</head>
+<body>
+    <header>
+        <h1>VinFast</h1>
+        <nav>
+            <ul>
+                <li><a href="#gioi-thieu">Giới thiệu</a></li>
+                <li><a href="#san-pham">Sản phẩm</a></li>
+                <li><a href="#tin-tuc">Tính năng</a></li>
+                <li><a href="#lien-he">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Tìm kiếm..." class="search-input">
+            <button class="search-button">Tìm kiếm</button>
+        </div>
+        <div class="buttons-log">
+            <a href="login-register.html" class="btn">Đăng Nhập</a>
+            <a href="login-register.html" class="btn">Đăng Ký</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="gioi-thieu">
+            <h2>Giới thiệu về VinFast</h2>
+            <img src="images/vinfast-intro.jpg" alt="Giới thiệu VinFast" class="responsive">
+            <p id="intro-text" class="short">
+                VinFast là công ty sản xuất ô tô đầu tiên tại Việt Nam, thuộc tập đoàn Vingroup.
+                Được thành lập vào năm 2017, VinFast nhanh chóng khẳng định vị thế của mình trong ngành công nghiệp ô tô toàn cầu.
+                Với tầm nhìn đưa Việt Nam ra thế giới, VinFast cam kết mang đến những sản phẩm ô tô chất lượng cao, công nghệ tiên tiến và thiết kế tinh tế.
+                Với triết lý “Đặt khách hàng làm trọng tâm”, VinFast không ngừng sáng tạo để tạo ra các sản phẩm đẳng cấp và trải nghiệm xuất sắc cho mọi người.
+                <span id="more-content" class="hidden">
+                    Thông tin bổ sung về VinFast: <strong>VinFast không ngừng nghiên cứu và phát triển các công nghệ mới, hướng tới tương lai bền vững.</strong>
+                </span>
+            </p>
+            <button id="toggle-button">Xem thêm</button>
+        </section>
+                
+
+        <section id="san-pham">
+            <h2>Sản phẩm</h2>
+            <div class="product-container">
+                <div class="product-item">
+                    <img src="images/fadil.jpg" alt="VinFast Fadil" class="product-image">
+                    <h3>VinFast Fadil</h3>
+                    <p>Xe hatchback nhỏ gọn, phù hợp với nhu cầu di chuyển trong đô thị.</p>
+                    <a href="vinfast-fadil.html" class="btn-detail">Xem chi tiết</a>
+                </div>
+
+                <div class="product-item">
+                    <img src="images/lux-a2.jpg" alt="VinFast Lux A2.0" class="product-image">
+                    <h3>VinFast Lux A2.0</h3>
+                    <p>Mẫu sedan sang trọng, được trang bị nhiều công nghệ tiên tiến.</p>
+                    <a href="vinfast-lux-a2.html" class="btn-detail">Xem chi tiết</a>
+                </div>
+                
+                <div class="product-item">
+                    <img src="images/lux-sa.jpg" alt="VinFast Lux SA2.0" class="product-image">
+                    <h3>VinFast Lux SA2.0</h3>
+                    <p>Mẫu SUV với thiết kế mạnh mẽ và không gian rộng rãi.</p>
+                    <a href="vinfast-lux-sa2.html" class="btn-detail">Xem chi tiết</a>
+                </div>
+                
+                <div class="product-item">
+                    <img src="images/vf-e34.jpg" alt="VinFast VF e34" class="product-image">
+                    <h3>VinFast VF e34</h3>
+                    <p>Mẫu xe điện đầu tiên của VinFast, với công nghệ tiên tiến.</p>
+                    <a href="vinfast-e34.html" class="btn-detail">Xem chi tiết</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="tin-tuc">
+            <h2>Tin tức mới nhất</h2>
+            <div class="news-container">
+                <div class="news-item">
+                    <a href="https://cafef.vn/doanh-thu-cua-vinfast-quy-2-2024-tang-9-so-voi-cung-ky-nam-truoc-so-luong-xe-ban-ra-tang-43-188240920182927419.chn" target="_blank">
+                        <img src="images/vinfast.jpg" alt="vinfast" class="news-image">
+                        <h3>Tăng 43%, VinFast bán hơn 13.000 xe trong quý 2/2024, doanh thu 9.000 tỷ</h3>
+                        <p>VinFast ghi nhận doanh thu 357 triệu USD trong quý 2, tăng 9% so với cùng kỳ năm 2023.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+
+        <section id="lien-he">
+            <h2>Liên hệ</h2>
+            <p>Để biết thêm thông tin, vui lòng liên hệ với chúng tôi qua:</p>
+            <p>Email: <a href="mailto:info@vinfast.vn">info@vinfast.vn</a></p>
+            <p>Điện thoại: 1900 2345</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VinFast. Tất cả quyền được bảo lưu.</p>
+    </footer>
+
+    <script>
+        document.getElementById('toggle-button').addEventListener('click', function() {
+            const moreContent = document.getElementById('more-content');
+            moreContent.classList.toggle('hidden');
+
+            if (moreContent.classList.contains('hidden')) {
+                this.textContent = "Xem thêm";
+            } else {
+                this.textContent = "Thu gọn";
+            }
+        });
+    </script>
+</body>
+</html>
